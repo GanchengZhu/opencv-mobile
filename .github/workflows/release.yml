@@ -437,7 +437,7 @@ jobs:
   release:
     permissions:
       contents: write  # for softprops/action-gh-release to create a release
-    needs: [setup, android, ios, ios-simulator, armlinux, macos, mac-catalyst, windows, ubuntu, webassembly, apple, devboard]
+    needs: [setup, windows]
     runs-on: ubuntu-latest
     steps:
     - name: download
